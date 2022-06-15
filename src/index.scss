@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #e7f6ff;
+}
+
+.wrapper {
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+
+  max-width: 1080px;
+  margin: 50px auto;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border-bottom: 1px solid #eaeaea;
+
+    .headerLeft {
+      display: flex;
+      align-items: center;
+
+      .logoImage {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+      }
+
+      .headerInfo {
+        h3,
+        p {
+          margin: 0;
+        }
+
+        h3 {
+          text-transform: uppercase;
+        }
+
+        p {
+          color: #9d9d9d;
+          opacity: 5;
+        }
+      }
+    }
+
+    .headerRight {
+      display: flex;
+      align-items: center;
+
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      .svgIcon {
+        width: 18px;
+        height: 18px;
+      }
+
+      li {
+        margin-right: 30px;
+
+        span {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  .content {
+    padding: 40px;
+
+    h1 {
+      margin: 0;
+      display: block !important;
+      margin-bottom: 40px;
+    }
+
+    .sneakers {
+      display: flex;
+    }
+
+    .card {
+      border: 1px solid #f3f3f3;
+      border-radius: 40px;
+      padding: 30px;
+      width: 160px;
+      margin-right: 30px;
+
+      .sneakersImage {
+        width: 133px;
+        height: 112px;
+      }
+
+      .sneakersInfo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .sneakersPrice {
+          display: flex;
+          flex-direction: column;
+
+          p {
+            margin: 0;
+            font-size: 13px;
+            opacity: 0.5;
+            text-transform: uppercase;
+          }
+
+          b {
+            font-size: 13px;
+          }
+        }
+
+        .buttonPlus {
+          box-sizing: border-box;
+          background: #ffffff;
+          border: 1px solid #f2f2f2;
+          border-radius: 8px;
+          height: 32px;
+          width: 32px;
+          cursor: pointer;
+        }
+      }
+
+      h5 {
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+  }
+}
